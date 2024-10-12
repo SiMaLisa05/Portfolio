@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simamkele Mbulawa | Developer Portfolio</title>
+  
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #111111;
+      color: white;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #111111;
+      border-bottom: 1px solid #222;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      font-weight: 500;
+      padding: 15px;
+    }
+    nav .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-color: #151515;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #888;
+    }
+
+    /* Scroll Indicator */
+    .scroll-down {
+      position: absolute;
+      bottom: 20px;
+      font-size: 1.2rem;
+      color: #888;
+      cursor: pointer;
+    }
+    .scroll-down i {
+      font-size: 2rem;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #111111;
+      padding: 100px 0;
+    }
+    #about h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      color: white;
+    }
+    #about p {
+      text-align: center;
+      color: #bbb;
+      font-size: 1.1rem;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #1a1a1a;
+      padding: 100px 0;
+    }
+    #projects h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .project-card {
+      background-color: #222;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    .project-card h4 {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .project-card p {
+      color: #aaa;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #111111;
+      padding: 100px 0;
+    }
+    #contact h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
+      color: white;
+    }
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    #contact form .form-group {
+      margin-bottom: 20px;
+    }
+    #contact form input,
+    #contact form textarea {
+      width: 100%;
+      padding: 15px;
+      border-radius: 4px;
+      border: none;
+      background-color: #222;
+      color: #bbb;
+    }
+    #contact form button {
+      width: 100%;
+      padding: 15px;
+      background-color: #4b7bec;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #contact form button:hover {
+      background-color: #395ba7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* AOS Animations */
+    [data-aos] {
+      opacity: 0;
+      transition-property: opacity, transform;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Simamkele Mbulawa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <h1 data-aos="fade-up">Simamkele Mbulawa</h1>
+    <p data-aos="fade-up" data-aos-delay="100">Developer. Creator. Innovator.</p>
+    <div class="scroll-down" data-aos="fade-up" data-aos-delay="200">
+      <span>Scroll Down</span>
+      <i class="bi bi-arrow-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 data-aos="fade-up">About Me</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        I'm a developer with expertise in web development, Django, Bootstrap, and APIs. Passionate about building efficient, scalable applications, I strive to bring unique solutions to every project I work on.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 data-aos="fade-up">My Projects</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card">
+            <h4>Project One</h4>
+            <p>A dynamic Django-based health system for managing patient data.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <h4>Project Two</h4>
+            <p>An invoicing system built with PHP, featuring dynamic tax calculations and Bootstrap styling.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card">
+            <h4>Project Three</h4>
+            <p>A web app for entrepreneurs, offering tools for managing business tasks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 data-aos="fade-up">Contact Me</h2>
+      <form data-aos="fade-up" data-aos-delay="100">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Simamkele Mbulawa. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS (via CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS JS (via CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>
